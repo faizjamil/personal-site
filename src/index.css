@@ -2,36 +2,41 @@
   /* background-color: #111;
   color: #FFF */
   color-scheme: light dark;
-
+  --hover-color: dodgerblue;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  /* if display:inline is set then must set padding*/
+  padding: 1rem;
+  overflow: hidden;
+  background-color: #333;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  border-color: cadetblue;
 }
 #home {
-  display:block;
   font-size: large;
   margin-left:1em;
   margin-right:1em;
 }
 
 li {
-  float: left;
+  display:inline;
+  /* float: left; */
 }
 
 li a {
-  display: block;
+  /* display: block; */
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: x-axis y-axis*/
+  padding: 1.4rem 1.6rem;
   text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color:dodgerblue;
+  background-color:var(--hover-color);
 }
