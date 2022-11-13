@@ -5,9 +5,9 @@ import './index.css'
 document.querySelector<HTMLDivElement>('#home')!.innerHTML = `
   <nav>
     <ul>
-      <li id="home"><a href="index.html">Faizan Jamil</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/about">About</a></li>
+      <li id="home-link"><a href="index.html">Faizan Jamil</a></li>
+      <li class="other-pages"><a class="other-pages-links" href="/contact">Contact</a></li>
+      <li class="other-pages"><a class="other-pages-links" href="/about">About</a></li>
     </ul>
   </nav>
   <main>

@@ -2,28 +2,36 @@
   /* background-color: #111;
   color: #FFF */
   color-scheme: light dark;
-  --hover-color: dodgerblue;
+  background-color: #223;
+  --hover-color: rgb(27, 108, 189);
+
+  --nav-link-padding: 1.17rem 1.17rem;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   /* if display:inline is set then must set padding*/
-  padding: 1rem;
-  overflow: hidden;
-  background-color: #333;
-  border-bottom-style: solid;
+  /* padding: 0rem; */
+  /* padding-bottom: 1.2rem;
+  padding-top: 1.2rem; */
+  /* padding: 1.2rem 1.2rem; */
+  padding: var(--nav-link-padding);
+  /* overflow: hidden; */
+  /* background-color: #223; */
+  /* border-bottom-style: solid;
   border-bottom-width: 0.2rem;
-  border-color: cadetblue;
+  border-color: cadetblue; */
 }
-#home {
+
+#home-link {
   font-size: large;
-  margin-left:1em;
-  margin-right:1em;
+  margin-left: -1.2rem;
+  margin-right: 1rem;
 }
 
 li {
-  display:inline;
+  display: inline;
   /* float: left; */
 }
 
@@ -32,11 +40,20 @@ li a {
   color: white;
   text-align: center;
   /* padding: x-axis y-axis*/
-  padding: 1.4rem 1.6rem;
+  /* padding: var(--nav-link-padding); */
+  padding: 1.2rem 1.2rem;
   text-decoration: none;
 }
-
+.other-pages {
+  /* padding-top: 1em; */
+  /* padding-bottom: 0.4rem; */
+  /* margin-bottom: -0.1rem; */
+  float: inline-end;
+}
+.other-pages-links {
+  padding-bottom: 1.4rem;
+}
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color:var(--hover-color);
+  background-color: var(--hover-color);
 }
